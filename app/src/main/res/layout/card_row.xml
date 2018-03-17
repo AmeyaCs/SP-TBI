@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="130dp"
+    android:layout_marginEnd="20dp" android:layout_marginStart="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!--Dynamic (Still to make dynamic)-->
+        <ImageView
+            android:id="@+id/flogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pykih"
+            />
+
+        <!--Dynamic (still to make dynamic)-->
+        <TextView
+            android:id="@+id/fcompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="25sp"
+            android:text="Pykih"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/flogo"/>
+
+        <!--Static -->
+        <TextView
+            android:id="@+id/founder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:text="@string/founder"
+            android:layout_toEndOf="@id/flogo"
+            android:layout_below="@id/fcompany"
+            android:layout_marginTop="5dp"/>
+
+        <!--Dynamic -->
+        <TextView
+            android:id="@+id/Dfounder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/fcompany"
+            android:layout_toEndOf="@id/founder"
+            android:layout_marginTop="5dp"/>
+
+        <!--Static -->
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/email"
+            android:layout_toEndOf="@id/flogo"
+            android:layout_below="@id/founder"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <!--Dynamic -->
+        <TextView
+            android:id="@+id/Demail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/email"
+            android:layout_below="@id/Dfounder"
+            android:layout_marginTop="5dp" />
+
+        <!--Static-->
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/flogo"
+            android:layout_below="@id/email"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:text="@string/contact"/>
+
+        <!--Dynamic-->
+
+        <TextView
+            android:id="@+id/Dcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/contact"
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/Demail"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
